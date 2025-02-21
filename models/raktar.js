@@ -1,5 +1,7 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
+
+
 
 
 const Raktar = sequelize.define("Raktar", {
@@ -11,4 +13,5 @@ const Raktar = sequelize.define("Raktar", {
   timestamps: false,
 });
 
-module.exports = Raktar;
+export default Raktar;
+

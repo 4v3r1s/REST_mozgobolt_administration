@@ -1,5 +1,7 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
+
+
 
 
 const Csoport = sequelize.define("Csoport", {
@@ -13,4 +15,4 @@ const Csoport = sequelize.define("Csoport", {
   timestamps: false,
 });
 
-module.exports = Csoport;
+export default Csoport;

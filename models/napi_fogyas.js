@@ -1,6 +1,5 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
-
 
 const napi_fogyas = sequelize.define("napi_fogyas", {
   azonosito: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -14,4 +13,4 @@ const napi_fogyas = sequelize.define("napi_fogyas", {
   timestamps: false,
 });
 
-module.exports = napi_fogyas;
+export default napi_fogyas;

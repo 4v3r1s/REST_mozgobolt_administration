@@ -1,5 +1,7 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
+
+
 
 const Termek = sequelize.define("Termek", {
   azonosito: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
@@ -26,4 +28,5 @@ const Termek = sequelize.define("Termek", {
   timestamps: false,
 });
 
-module.exports = Termek;
+export default Termek;
+

@@ -1,5 +1,6 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
+
 
 
 const Rendeles = sequelize.define("Rendeles", {
@@ -14,4 +15,5 @@ const Rendeles = sequelize.define("Rendeles", {
   timestamps: false,
 });
 
-module.exports = Rendeles;
+export default Rendeles;
+

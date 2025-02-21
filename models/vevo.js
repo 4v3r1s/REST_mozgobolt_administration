@@ -1,5 +1,6 @@
-const { DataTypes } = require("sequelize");
+import { DataTypes } from "sequelize";
 import sequelize from "../config/config.js";
+
 
 
 const Vevo = sequelize.define("Vevo", {
@@ -33,4 +34,5 @@ const Vevo = sequelize.define("Vevo", {
   timestamps: false,
 });
 
-module.exports = Vevo;
+export default Vevo;
+
